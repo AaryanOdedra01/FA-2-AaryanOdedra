@@ -7,6 +7,8 @@ WaterBuddy helps users set a daily water goal, record their drinks, and understa
 **Created by Aaryan Odedra**  
 **IBCP Year 1 · CRS AI · FA-2 Project**
 
+Link to the Streamlit app: https://fa-2-aaryanodedra-w7qcbjiq9mkskcahyyva4f.streamlit.app/
+
 ## Project overview
 
 This project develops the WaterBuddy concept from an FA-1 storyboard into an interactive Python application. Streamlit provides the web interface, Python handles the calculations and session data, and original SVG graphics display the battery and progress chart.

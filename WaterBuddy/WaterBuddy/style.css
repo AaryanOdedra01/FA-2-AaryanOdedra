@@ -1,0 +1,115 @@
+/* Small interaction transitions; no continuously running animation. */
+.stApp { background:var(--page); color:var(--ink); font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,sans-serif; }
+[data-testid="stSidebar"] { background:var(--card); border-right:1px solid var(--line); }
+[data-testid="stSidebar"] [data-testid="stSidebarContent"] { padding-top:2rem; }
+.insight-stats { padding:12px 0; margin:10px 0 14px; }
+.st-key-browser_delivery { display:none; }
+[data-testid="stMetricLabel"] p,[data-testid="stMetricValue"] { color:var(--ink); }
+.block-container { max-width:950px; padding:1.5rem 2rem; }
+.block-container [data-testid="stVerticalBlock"] { gap:12px; }
+header[data-testid="stHeader"] { background:transparent; }
+#MainMenu,footer,[data-testid="stAppDeployButton"] { display:none; }
+h1,h2,h3,p,label { color:var(--ink); }
+h1 { font-size:1.75rem !important; font-weight:650 !important; letter-spacing:-.7px; padding:.1rem 0 .4rem !important; margin:0 !important; }
+h2 { font-size:1.35rem !important; letter-spacing:-.35px; }
+h3 { font-size:.95rem !important; font-weight:600 !important; padding:.2rem 0 !important; }
+.brand-row { display:flex; align-items:center; justify-content:space-between; gap:12px; padding-bottom:14px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+.brand { display:flex; align-items:center; gap:10px; font-size:19px; font-weight:650; letter-spacing:-.45px; }
+.brand svg { width:19px; height:25px; color:var(--teal); }
+.small-note { font-size:10px; letter-spacing:1.7px; color:var(--muted); }
+.eyebrow { font-size:10px; font-weight:600; letter-spacing:1.45px; color:var(--muted); margin:4px 0 0; }
+.intro { color:var(--muted); font-size:14px; line-height:1.6; margin:10px 0 15px; }
+.hero-title { font-size:34px; font-weight:650; letter-spacing:-1px; line-height:1.2; margin:16px 0 12px; color:var(--ink); }
+.hero-card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 24px 0; }
+.card-top { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.card-title { font-size:12px; color:var(--muted); font-weight:500; }
+.badge { background:var(--soft); color:var(--teal); border:1px solid var(--line); border-radius:6px; padding:4px 9px; font-size:10px; font-weight:600; }
+.battery-layout { display:flex; align-items:center; gap:30px; padding:8px 0 12px; }
+.charge-summary { min-width:142px; }
+.charge-number { font-size:64px; font-weight:600; letter-spacing:-3px; line-height:1.05; font-variant-numeric:tabular-nums; }
+.charge-number span { font-size:25px; color:var(--muted); font-weight:400; letter-spacing:-.6px; margin-left:3px; }
+.charge-caption { color:var(--muted); font-size:12px; margin-top:8px; }
+.battery-wrap { flex:1; min-width:0; }
+.battery { display:block; width:100%; max-height:128px; }
+.battery-ends { display:flex; justify-content:space-between; font-size:9px; letter-spacing:1.2px; color:var(--muted); padding:0 9px; margin-top:3px; }
+.milestone { border-top:1px solid var(--line); padding:10px 0; font-size:12px; line-height:1.6; }
+.milestone strong { font-weight:500; color:var(--ink); }
+.milestone span { color:var(--muted); margin-left:4px; }
+.stats { display:grid; grid-template-columns:repeat(3,1fr); margin:4px 0 8px; }
+.stat { padding:9px 20px; border-right:1px solid var(--line); }
+.stat:first-child { padding-left:0; }
+.stat:last-child { border-right:0; }
+.stat-label { color:var(--muted); font-size:11px; margin-bottom:5px; }
+.stat-value { font-size:23px; font-weight:550; letter-spacing:-.6px; font-variant-numeric:tabular-nums; }
+.stat-value small { color:var(--muted); font-size:12px; font-weight:400; letter-spacing:0; margin-left:2px; }
+.section-heading { display:flex; justify-content:space-between; align-items:center; gap:10px; margin:10px 0 2px; }
+.section-heading h3 { margin:0; }
+.section-heading span { font-size:11px; color:var(--muted); }
+.pace { color:var(--muted); font-size:11px; padding:8px 0 0; }
+.timeline { border-top:1px solid var(--line); }
+.log-row { display:flex; align-items:center; gap:10px; padding:12px 0; border-bottom:1px solid var(--line); font-size:12px; }
+.time { color:var(--muted); width:75px; }
+.amount { flex:1; font-weight:500; }
+.running { color:var(--muted); font-size:11px; }
+.log-dot { width:5px; height:5px; border-radius:50%; background:var(--teal); margin-right:3px; }
+.empty { color:var(--muted); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:18px 0; font-size:12px; line-height:1.6; }
+.foot { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--line); margin-top:20px; padding-top:13px; color:var(--muted); font-size:10px; }
+.goal-number { font-size:42px; font-weight:600; letter-spacing:-1.5px; margin:10px 0 0; }
+.goal-number small { font-size:18px; color:var(--muted); font-weight:400; letter-spacing:0; }
+.week-chart { width:100%; max-height:190px; }
+/* Native widgets retain their keyboard and screen-reader behaviour. */
+[data-testid="stButton"] button,[data-testid="stFormSubmitButton"] button,[data-testid="stDownloadButton"] button {
+    background:var(--card); color:var(--ink); border:1px solid var(--line); border-radius:8px; min-height:42px;
+    transition:transform 100ms ease,background-color 150ms ease,border-color 150ms ease,box-shadow 150ms ease;
+}
+[data-testid="stButton"] button p,[data-testid="stFormSubmitButton"] button p,[data-testid="stDownloadButton"] button p { color:inherit !important; font-size:13px; font-weight:500; }
+[data-testid="stButton"] button:hover:not(:disabled),[data-testid="stFormSubmitButton"] button:hover:not(:disabled),[data-testid="stDownloadButton"] button:hover:not(:disabled) { border-color:var(--teal); background:var(--soft); transform:translateY(-1px); }
+[data-testid="stButton"] button:active:not(:disabled),[data-testid="stFormSubmitButton"] button:active:not(:disabled),[data-testid="stDownloadButton"] button:active:not(:disabled) { transform:translateY(0) scale(.975); transition-duration:65ms; }
+[data-testid="stButton"] button[kind="primary"],[data-testid="stFormSubmitButton"] button[kind="primary"] { background:var(--primary); border-color:var(--primary); color:var(--primary-text); }
+[data-testid="stButton"] button[kind="primary"]:hover,[data-testid="stFormSubmitButton"] button[kind="primary"]:hover { background:var(--primary); border-color:var(--primary); filter:brightness(1.08); }
+button:disabled { opacity:.45; }
+.st-key-navigation { margin:0 0 3px; }
+.st-key-navigation [role="radiogroup"] { display:inline-flex; flex-wrap:wrap; max-width:100%; gap:4px; padding:3px; background:var(--card); border:1px solid var(--line); border-radius:9px; }
+.st-key-navigation [data-testid="stRadioOption"] { margin:0; padding:7px 13px; border-radius:6px; transition:background-color 150ms ease,transform 90ms ease; }
+.st-key-navigation [data-testid="stRadioOption"] > div > div:first-child { display:none; }
+.st-key-navigation label p { font-size:12px; color:var(--muted); transition:color 150ms ease; }
+.st-key-navigation label:has(input:checked) { background:var(--selected); }
+.st-key-navigation label:has(input:checked) p { color:var(--ink); }
+.st-key-navigation label:hover { background:var(--soft); }
+.st-key-navigation label:active { transform:scale(.97); }
+.st-key-navigation label:has(input:focus-visible) { outline:2px solid var(--teal); outline-offset:2px; }
+[data-testid="stWidgetLabel"] p { color:var(--ink); font-size:13px; }
+[data-testid="stRadio"] label,[data-testid="stCheckbox"] label { transition:opacity 120ms ease; }
+[data-testid="stRadio"] label:active,[data-testid="stCheckbox"] label:active { opacity:.8; }
+[data-testid="stNumberInputContainer"],[data-baseweb="select"] > div { background:var(--card); color:var(--ink); border-color:var(--line); border-radius:8px; transition:border-color 150ms ease,box-shadow 150ms ease; }
+[data-testid="stNumberInputContainer"]:focus-within,[data-baseweb="select"] > div:focus-within { border-color:var(--teal); box-shadow:0 0 0 2px color-mix(in srgb,var(--teal) 15%,transparent); }
+input { color:var(--ink) !important; -webkit-text-fill-color:var(--ink) !important; background:var(--card) !important; }
+[data-testid="stPopoverBody"],[data-baseweb="popover"],[role="listbox"] { background:var(--card); color:var(--ink); }
+[data-testid="stCaptionContainer"] p { color:var(--muted); font-size:12px; }
+[data-testid="stExpander"] { background:transparent; border-color:var(--line); border-radius:8px; }
+[data-testid="stExpander"] summary { border-radius:7px; transition:background-color 150ms ease,transform 90ms ease; }
+[data-testid="stExpander"] summary p { font-size:12px; }
+[data-testid="stExpander"] summary:hover { background:var(--soft); }
+[data-testid="stExpander"] summary:active { transform:scale(.993); }
+[data-testid="stForm"] { border-color:var(--line); border-radius:10px; }
+[data-testid="stToast"],[role="alertdialog"] { background:var(--card) !important; color:var(--ink) !important; border:1px solid var(--line); border-radius:9px; }
+button:focus-visible,input:focus-visible,summary:focus-visible { outline:2px solid var(--teal) !important; outline-offset:3px; }
+@keyframes refill { from {transform:translateY(var(--from-y))} to {transform:translateY(var(--to-y))} }
+.liquid-fill.is-changing { animation:refill 360ms cubic-bezier(.2,.7,.3,1) both; }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition:none !important; } button:hover,button:active,label:active,summary:active { transform:none !important; } }
+@media (max-width:640px) {
+    .block-container { padding:1.5rem 1rem; }
+    .brand-row { padding-bottom:15px; }
+    .small-note { font-size:8px; letter-spacing:1px; }
+    .hero-title { font-size:29px; }
+    .hero-card { padding:16px 16px 0; }
+    .battery-layout { flex-direction:column; align-items:stretch; gap:8px; padding:16px 0; }
+    .charge-summary { display:flex; align-items:baseline; gap:15px; }
+    .charge-number { font-size:52px; }
+    .battery { max-height:115px; }
+    .stat { padding:8px 10px; }
+    .stat-value { font-size:21px; }
+    .section-heading span { font-size:10px; }
+    .st-key-navigation [data-testid="stRadioOption"] { padding:7px 10px; }
+    .foot { flex-wrap:wrap; }
+}
